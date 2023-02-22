@@ -3,7 +3,8 @@ import {
   Switch,
   Route,
   withRouter,
-  useLocation
+  useLocation,
+  HashRouter
 } from "react-router-dom";
 import './output.css';
 
@@ -32,15 +33,18 @@ function App() {
 
   return (
     <div>
-      <NavBar items={navBarItems} currentPath={location.pathname} />
-      <Switch>
-        <Route path="/about" component={AboutPage} ></Route>
-        <Route path="/myitems" component={MyItemsPage} ></Route>
-        <Route path="/items" component={ItemsPage} ></Route>
-        <Route path="/events" component={EventsPage} ></Route>
-        <Route path="/login" component={LoginPage} ></Route>
-        <Route path="/" component={LandingPage} ></Route>
-      </Switch>
+      <HashRouter>
+        <NavBar items={navBarItems} currentPath={location.pathname} />
+        <Switch>
+          <Route path="/about" component={AboutPage} ></Route>
+          <Route path="/myitems" component={MyItemsPage} ></Route>
+          <Route path="/items" component={ItemsPage} ></Route>
+          <Route path="/events" component={EventsPage} ></Route>
+          <Route path="/login" component={LoginPage} ></Route>
+          <Route path="/:name" component={LandingPage} ></Route>
+          <Route path="/" component={LandingPage} ></Route>
+        </Switch>
+      </HashRouter>
     </div>
   );
 }

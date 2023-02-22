@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { useHistory } from "react-router-dom";
 import Item from "../types/item";
 
 interface itemCardProps {
@@ -48,7 +47,6 @@ export default function ItemCards(props: itemCardsProps) {
 }
 
 function ItemCard(props: itemCardProps): JSX.Element {
-    const history = useHistory();
     return (
         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">

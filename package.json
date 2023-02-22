@@ -2,7 +2,7 @@
   "name": "Assignment1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://maokus.github.io/CS6131_Assignment1/",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
@@ -16,7 +16,9 @@
     "postcss": "^8.4.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-live-clock": "^6.1.1",
     "react-microsoft-login": "^1.15.0",
+    "react-moment": "^1.1.2",
     "react-player": "^2.9.0",
     "react-scripts": "4.0.3",
     "serve": "^14.1.2",
@@ -27,6 +29,7 @@
   "scripts": {
     "start": "react-scripts start & npx tailwindcss -i ./src/index.css -o ./src/output.css --watch",
     "build": "react-scripts build",
+    "deploy": "npm run build; gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -54,6 +57,7 @@
     "@types/react-router-dom": "^5.1.8",
     "axios": "^0.21.4",
     "cachios": "^3.0.0",
+    "gh-pages": "^4.0.0",
     "react-git-info": "^2.0.0",
     "react-midi-player": "^1.0.5",
     "react-router-dom": "^5.2.0",

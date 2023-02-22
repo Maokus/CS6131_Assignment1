@@ -8,7 +8,7 @@ export default function MyItemsPage() {
     ]
     return (
         <div>
-            <h1 className="font-semibold text-5xl m-20 dark:text-white mb-0">Welcome, NAMEPLACEHOLDER</h1>
+            <h1 className="font-semibold text-5xl m-20 dark:text-white mb-0">Welcome, Vikram.</h1>
             <div className="w-full flex justify-center">
                 <div className="w-10/12 lg:w-1/3 m-20 rounded-lg dark:bg-gray-900 shadow-lg">
                     <div className="w-full text-center">
