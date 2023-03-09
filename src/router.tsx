@@ -41,7 +41,6 @@ function App() {
           <Route path="/items" component={ItemsPage} ></Route>
           <Route path="/events" component={EventsPage} ></Route>
           <Route path="/login" component={LoginPage} ></Route>
-          <Route path="/:name" component={LandingPage} ></Route>
           <Route path="/" component={LandingPage} ></Route>
         </Switch>
       </HashRouter>
