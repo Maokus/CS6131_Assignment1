@@ -11,10 +11,12 @@ import './output.css';
 import LandingPage from "./Containers/landingPage";
 import NavBar from "./Components/navBar";
 import AboutPage from "./Containers/aboutPage";
-import MyItemsPage from "./Containers/myItemsPage";
 import ItemsPage from "./Containers/itemsPage";
 import EventsPage from "./Containers/eventsPage";
 import LoginPage from "./Containers/loginPage";
+import EventsEditPage from "./Containers/eventsEditPage";
+import MembersPage from "./Containers/membersPage";
+import PossessionPage from "./Containers/possessionPage";
 
 
 
@@ -25,8 +27,9 @@ function App() {
   const navBarItems = [
     ["Home", "/"],
     ["About", "/about"],
-    ["My Items", "/myitems"],
     ["Items", "/items"],
+    ["Members", "/members"],
+    ["Possession", "/Possession"],
     ["Events", "/events"],
     ["Login", "/login"],
   ]
@@ -37,10 +40,12 @@ function App() {
         <NavBar items={navBarItems} currentPath={location.pathname} />
         <Switch>
           <Route path="/about" component={AboutPage} ></Route>
-          <Route path="/myitems" component={MyItemsPage} ></Route>
           <Route path="/items" component={ItemsPage} ></Route>
           <Route path="/events" component={EventsPage} ></Route>
+          <Route path="/events/:eventid" component={EventsEditPage} ></Route>
           <Route path="/login" component={LoginPage} ></Route>
+          <Route path="/members" component={MembersPage} ></Route>
+          <Route path="/possession" component={PossessionPage} ></Route>
           <Route path="/" component={LandingPage} ></Route>
         </Switch>
       </HashRouter>

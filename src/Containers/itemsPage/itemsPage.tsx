@@ -27,8 +27,8 @@ function SearchBar() {
 
 export default function ItemsPage() {
     const its: Item[] = [
-        { name: "Camera 2", description: "A camera, black magic design", possesor: null },
-        { name: "Camera 3", description: "A camera, lumix", possesor: null }
+        { name: "Camera 2", id: "BMPCC2", status: "status", remark: "null", totalQuantity: 1, remainingQuantity: 1, possesor: null },
+        { name: "Camera 3", id: "BMPCC3", status: "status", remark: "null", totalQuantity: 1, remainingQuantity: 1, possesor: null },
     ]
     return (
         <div>
